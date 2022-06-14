@@ -1,0 +1,75 @@
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  min-height: 100%;
+}
+
+html,
+body,
+#root {
+  min-height: 100%;
+  height: 100%;
+}
+
+body {
+  font-family: 'Inter', 'Helevetica', 'Arial', sans-serif;
+  background: #f2f3f4;
+  font-size: 16px;
+  padding: 0;
+  margin: 0;
+}
+
+.initial-loader {
+  width: 150px;
+  height: 150px;
+  -webkit-animation: initial-loader-loading 1.4s ease-in-out infinite;
+          animation: initial-loader-loading 1.4s ease-in-out infinite;
+  stroke-dasharray: 80px, 200px;
+  stroke-dashoffset: 0px;
+  align-self: center;
+}
+
+.initial-loader-container {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.initial-loader-circle {
+  stroke: #2196f3;
+}
+
+@-webkit-keyframes initial-loader-loading {
+  0% {
+    stroke-dasharray: 1px, 200px;
+    stroke-dashoffset: 0px;
+  }
+  50% {
+    stroke-dasharray: 100px, 200px;
+    stroke-dashoffset: -15px;
+  }
+  100% {
+    stroke-dasharray: 100px, 200px;
+    stroke-dashoffset: -125px;
+  }
+}
+
+@keyframes initial-loader-loading {
+  0% {
+    stroke-dasharray: 1px, 200px;
+    stroke-dashoffset: 0px;
+  }
+  50% {
+    stroke-dasharray: 100px, 200px;
+    stroke-dashoffset: -15px;
+  }
+  100% {
+    stroke-dasharray: 100px, 200px;
+    stroke-dashoffset: -125px;
+  }
+}
+
+
+/*# sourceMappingURL=app.8a336fa3742863fbf518.css.map*/
